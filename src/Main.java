@@ -1,6 +1,15 @@
+import ducs.MallarDuck;
+import ducs.RedHeadDuck;
+
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("Hello world!3");
+        RedHeadDuck redHeadDuck = new RedHeadDuck();
+        redHeadDuck.swim();
+        redHeadDuck.display();
+
+        MallarDuck mallarDuck = new MallarDuck();
+        mallarDuck.swim();
+        mallarDuck.display();
     }
 }
