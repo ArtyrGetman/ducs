@@ -1,22 +1,22 @@
 import ducs.DecoyDuck;
 import ducs.MallarDuck;
 import ducs.RedHeadDuck;
+import ducs.RubberDuck;
 
 public class Main {
     public static void main(String[] args) {
 
-        RedHeadDuck redHeadDuck = new RedHeadDuck();
-        redHeadDuck.swim();
-        redHeadDuck.display();
-
         MallarDuck mallarDuck = new MallarDuck();
-        mallarDuck.swim();
         mallarDuck.display();
-        mallarDuck.fly();
-        mallarDuck.quack();
+        mallarDuck.flyBehavior();
+        mallarDuck.performQuack();
 
-        DecoyDuck decoyDuck = new DecoyDuck();
-        decoyDuck.display();
-        decoyDuck.swim();
+
+        RubberDuck rubberDuck = new RubberDuck();
+        rubberDuck.display();
+        rubberDuck.flyBehavior();
+        rubberDuck.performQuack();
+
+
     }
 }
