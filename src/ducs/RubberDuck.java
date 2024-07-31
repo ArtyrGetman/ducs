@@ -1,8 +1,16 @@
 package ducs;
 
-public class RubberDuck extends Duck{
+import ducs.ducksbehavior.Duck;
+import ducs.ducksbehavior.Quackable;
+
+public class RubberDuck extends Duck implements Quackable {
     @Override
-    void display() {
+   public void display() {
         System.out.println("rubber duck");
+    }
+
+    @Override
+    public void quack() {
+
     }
 }
